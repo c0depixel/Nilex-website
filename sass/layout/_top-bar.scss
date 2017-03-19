@@ -1,0 +1,50 @@
+.top-bar-section {
+  background: #000;
+  .top-navigation {
+    ul {
+      li {
+        display: inline-block;
+        line-height: 27px;
+        margin-right: 30px;
+        a{
+          color: #fff;
+          display: block;
+          font-size: 10px;
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
+  .global {
+    ul {
+      display: flex;
+      justify-content: flex-end;
+      li {
+        border-left: 1px solid #464646;
+        line-height: 27px;
+        &:last-child {
+          border-right: 1px solid #464646;
+        }
+        a{
+          padding: 0 18px;
+          display: block;
+          &:hover {
+            text-decoration: none;
+            background: #333;
+          }
+          .f-nsp {
+            font-size: 16px;
+            color: #696969;
+            vertical-align: middle;
+            margin-right: 3px;
+          }
+          .text {
+            color: $primary-color;
+            font-size: 10px;
+            text-transform: uppercase;
+          }
+        }
+      }
+    }
+  }
+}

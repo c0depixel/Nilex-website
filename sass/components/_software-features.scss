@@ -1,0 +1,113 @@
+.software-features-section {
+  padding: 75px 0;
+  .left-features {
+    > div {
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  .right-features {
+    .title {
+      position: relative;
+      margin-bottom: 60px;
+      h2 {
+        font-size: 34px;
+        font-weight: 300;
+        color: #000;
+        margin: 0;
+        margin-bottom: 15px;
+        margin-top: 15px;
+      }
+      .subtitle {
+        font-size: 18px;
+        color: #acacac;
+        font-weight: 300;
+      }
+      &:after {
+        content: "";
+        position: absolute;
+        left: 0;
+        width: 66px;
+        height: 2px;
+        bottom: -30px;
+        background: $primary-color;
+      }
+    }
+    .introtext {
+      font-size: 16px;
+      color: #000;
+      font-weight: 300px;
+      line-height: 30px;
+      margin-bottom: 50px;
+      p {
+        margin: 20px 0;
+      }
+    }
+    .actions {
+      a {
+        line-height: 41px;
+        padding: 0 50px;
+        margin-right: 20px;
+        border: none;
+      }
+    }
+  }
+}
+
+
+.hexagon {
+  position: relative;
+  -webkit-clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+  clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+  background-image: url(../images/software-features-bg.jpg);
+  background-position: fixed;
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover;
+  width: 195px;
+  height: 170px;
+  color: #fff;
+  text-align: center;
+  overflow: hidden;
+  a {
+    color: #fff;
+    display: block;
+  }
+  &:after {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    background: $primary-color;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    @include transition(all .3s ease);
+    bottom: 0;
+  }
+  &:hover {
+    &:after {
+      opacity: 0.4;
+    }
+  }
+  .inner {
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 22px 40px;
+    h3 {
+      font-size: 13px;
+      line-height: normal;
+      margin: 0;
+    }
+    .icon {
+      font-size: 66px;
+      line-height: 40px;
+      margin-bottom: 10px;
+    }
+  }
+}
