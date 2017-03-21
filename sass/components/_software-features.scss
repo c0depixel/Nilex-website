@@ -1,5 +1,28 @@
 .software-features-section {
   padding: 75px 0;
+  position: relative;
+  .container {
+    position: relative;
+    z-index: 2;
+  }
+  .left-art {
+    background: url(../images/software-left-art.png);
+    width: 93px;
+    height: 109px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+  .right-art{
+    background: url(../images/software-right-art.png);
+    width: 204px;
+    height: 476px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+  }
   .left-features {
     > div {
       display: flex;

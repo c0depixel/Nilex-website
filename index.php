@@ -41,6 +41,8 @@
   <script src="js/TweenLite.min.js"></script>
   <script src="js/EasePack.min.js"></script>
   <script src="js/rAF.js"></script>
+  <script src="js/superfish.js"></script>
+  <script src="js/hoverIntent.js"></script>
   <script src="js/landing-effects.js" type="text/javascript"></script>
   <script src="js/paraxify.min.js" type="text/javascript"></script>
   <script src="js/sidebar-menu.js" type="text/javascript"></script>

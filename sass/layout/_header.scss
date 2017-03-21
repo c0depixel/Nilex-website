@@ -1,7 +1,6 @@
 .header-section {
   background: #fff;
   position: relative;
-  overflow: hidden;
   &:after {
     content: "";
     background: $secondary-color;
@@ -60,20 +59,59 @@
 .main-navigation {
   padding: 20px 0;
   padding-left: 30px;
-  position: relative;
+  padding-bottom: 0;
   z-index: 2;
   background: #fff;
-  ul {
+  position: relative;
+  > ul {
     display: flex;
     flex-wrap: nowrap;
-    li {
+    > li {
       line-height: 41px;
       padding: 0 15px;
-      a{
+      padding-bottom: 17px;
+      &.active {
+        a {
+          border-bottom: 3px solid $primary-color;
+        }
+      }
+      > a{
         color: $secondary-color;
         display: block;
         font-size: 15px;
         font-weight: 500;
+        position: relative;
+        border-bottom: 3px solid transparent;
+      }
+      &:hover{
+        > a {
+          border-bottom: 3px solid rgba($primary-color, 0.3);
+        }
+      }
+      .dropdown {
+        position: absolute;
+        top: 100%;
+        left: -200px;
+        right: -200px;
+        z-index: 10;
+        background: #000;
+        color: #fff;
+        padding: 20px;
+        display: none;
+        li {
+          margin: 0;
+          line-height: normal;
+          padding: 8px 0;
+          a {
+            color: #fff;
+            i {
+              margin-right: 5px;
+            }
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+        }
       }
     }
   }

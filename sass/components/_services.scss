@@ -1,0 +1,155 @@
+.services-section {
+  position: relative;
+  padding: 50px 0;
+  background: #fff;
+  .container {
+    position: relative;
+    z-index: 2;
+  }
+  .left-art {
+    background: url(../images/services-left-art.png);
+    width: 370px;
+    height: 359px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+  .right-art{
+    background: url(../images/services-right-art.png);
+    width: 190px;
+    height: 143px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+  }
+  .title {
+    position: relative;
+    margin-bottom: 80px;
+    text-align: center;
+    h2 {
+      font-size: 34px;
+      font-weight: 300;
+      color: #000;
+      margin: 0;
+      margin-bottom: 15px;
+      margin-top: 0;
+    }
+    .subtitle {
+      font-size: 18px;
+      color: #a3a3a3;
+      font-weight: 300;
+    }
+    &:after {
+      content: "";
+      position: absolute;
+      left: 50%;
+      width: 66px;
+      height: 2px;
+      margin-left: -33px;
+      bottom: -30px;
+      background: $primary-color;
+    }
+  }
+  .action {
+    text-align: center;
+    margin-top: 50px;
+    a {
+      line-height: 41px;
+      padding: 0 30px;
+      font-size: 15px;
+    }
+  }
+  .service-block {
+    text-align: center;
+    &:hover {
+      .image .icon {
+        -webkit-animation-name: fly-float, fly;
+        animation-name: fly-float, fly;
+        -webkit-animation-duration: .3s, 1.5s;
+        animation-duration: .3s, 1.5s;
+        -webkit-animation-delay: 0s, .3s;
+        animation-delay: 0s, .3s;
+        -webkit-animation-timing-function: ease-out, ease-in-out;
+        animation-timing-function: ease-out, ease-in-out;
+        -webkit-animation-iteration-count: 1, infinite;
+        animation-iteration-count: 1, infinite;
+        -webkit-animation-fill-mode: forwards;
+        animation-fill-mode: forwards;
+        -webkit-animation-direction: normal, alternate;
+        animation-direction: normal, alternate;
+      }
+    }
+    a {
+      display: block;
+      &:hover, &:focus {
+        text-decoration: none;
+      }
+    }
+    .image {
+      position: relative;
+      margin-bottom: 30px;
+      img {
+        display: inline-block;
+      }
+      .icon {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        @include transform(translateX(-50%)translateY(-50%)perspective(1px)translateZ(0));
+      }
+    }
+    h3 {
+      color: #000;
+      font-size: 26px;
+      margin: 0;
+      font-weight: 300;
+    }
+  }
+}
+
+
+
+
+@-webkit-keyframes fly {
+  0% {
+    -webkit-transform: translateX(-50%)translateY(-58%);
+    transform: translateX(-50%)translateY(-58%);
+  }
+  50% {
+    -webkit-transform: translateX(-50%)translateY(-54%);
+    transform: translateX(-50%)translateY(-54%);
+  }
+  100% {
+    -webkit-transform: translateX(-50%)translateY(-58%);
+    transform: translateX(-50%)translateY(-58%);
+  }
+}
+@keyframes fly {
+  0% {
+    -webkit-transform: translateX(-50%)translateY(-58%);
+    transform: translateX(-50%)translateY(-58%);
+  }
+  50% {
+    -webkit-transform: translateX(-50%)translateY(-54%);
+    transform: translateX(-50%)translateY(-54%);
+  }
+  100% {
+    -webkit-transform: translateX(-50%)translateY(-58%);
+    transform: translateX(-50%)translateY(-58%);
+  }
+}
+
+@-webkit-keyframes fly-float {
+  100% {
+    -webkit-transform: translateX(-50%)translateY(-58%);
+    transform: translateX(-50%)translateY(-58%);
+  }
+}
+@keyframes fly-float {
+  100% {
+    -webkit-transform: translateX(-50%)translateY(-58%);
+    transform: translateX(-50%)translateY(-58%);
+  }
+}
