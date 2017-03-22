@@ -947,7 +947,7 @@ ul, ol {
       line-height: 41px;
       padding: 0 15px;
       padding-bottom: 17px; }
-      .main-navigation > ul > li.active a {
+      .main-navigation > ul > li.active > a {
         border-bottom: 3px solid #ed9500; }
       .main-navigation > ul > li > a {
         color: #0d8a6c;
@@ -955,14 +955,30 @@ ul, ol {
         font-size: 15px;
         font-weight: 500;
         position: relative;
-        border-bottom: 3px solid transparent; }
+        border-bottom: 3px solid transparent;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex; }
+        .main-navigation > ul > li > a .fa {
+          line-height: 40px;
+          -webkit-flex-shrink: 0;
+          -ms-flex-negative: 0;
+          flex-shrink: 0;
+          width: 18px;
+          text-align: center; }
       .main-navigation > ul > li:hover > a {
         border-bottom: 3px solid rgba(237, 149, 0, 0.3); }
+      .main-navigation > ul > li.has-dropdown {
+        position: relative; }
+        .main-navigation > ul > li.has-dropdown .dropdown {
+          left: 0;
+          width: 200px; }
+      .main-navigation > ul > li.has-dropdown-big .dropdown {
+        left: -200px;
+        right: -200px; }
       .main-navigation > ul > li .dropdown {
         position: absolute;
         top: 100%;
-        left: -200px;
-        right: -200px;
         z-index: 10;
         background: #000;
         color: #fff;
@@ -1010,6 +1026,109 @@ ul, ol {
   top: 0;
   left: 0;
   width: 100%; }
+
+.footer-section {
+  background: #000;
+  padding: 20px 0; }
+  .footer-section .bottom-footer {
+    margin-top: 20px; }
+  .footer-section .footer-top-menu li {
+    display: inline-block;
+    margin-right: 20px; }
+    .footer-section .footer-top-menu li a {
+      text-transform: uppercase;
+      color: #ed9500;
+      font-size: 11px; }
+      .footer-section .footer-top-menu li a:hover {
+        text-decoration: underline; }
+  .footer-section .footer-bottom-menu li {
+    display: inline-block;
+    margin-right: 20px; }
+    .footer-section .footer-bottom-menu li a {
+      color: #a7a7a7;
+      font-size: 12px; }
+      .footer-section .footer-bottom-menu li a:hover {
+        text-decoration: underline; }
+  .footer-section .subscribe {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center; }
+    .footer-section .subscribe .text {
+      -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+      flex-grow: 1;
+      color: #a7a7a7;
+      font-size: 12px; }
+    .footer-section .subscribe .input {
+      -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+      flex-shrink: 0;
+      -webkit-flex-basis: 70%;
+      -ms-flex-preferred-size: 70%;
+      flex-basis: 70%;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
+      align-items: center; }
+      .footer-section .subscribe .input form {
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+        width: 100%; }
+        .footer-section .subscribe .input form input {
+          -webkit-flex-shrink: 0;
+          -ms-flex-negative: 0;
+          flex-shrink: 0;
+          height: 30px;
+          padding: 5px 15px;
+          color: #b4b4b4;
+          background: #3c3c3c;
+          border-radius: 3px 0 0 3px;
+          border: 1px solid #4f4f4f;
+          border-right: none; }
+        .footer-section .subscribe .input form button {
+          width: 40px;
+          text-align: center;
+          color: #fff;
+          font-size: 15px;
+          line-height: 30px;
+          height: 100%;
+          padding: 0;
+          background: #ed9500;
+          border-radius: 0 3px 3px 0;
+          -webkit-transition: all 0.3s ease;
+          -moz-transition: all 0.3s ease;
+          -ms-transition: all 0.3s ease;
+          -o-transition: all 0.3s ease;
+          transition: all 0.3s ease; }
+          .footer-section .subscribe .input form button:hover {
+            background: #ffa308; }
+  .footer-section .social {
+    text-align: right; }
+    .footer-section .social li {
+      display: inline-block;
+      margin-right: 12px;
+      line-height: 30px; }
+      .footer-section .social li a {
+        color: #a7a7a7;
+        font-size: 18px; }
+        .footer-section .social li a:hover {
+          color: #ed9500; }
+  .footer-section .copyright {
+    text-align: right;
+    color: #a7a7a7;
+    font-size: 12px; }
 
 .sidebar-toggle {
   z-index: 100;
@@ -1683,6 +1802,61 @@ html[dir="ltr"] .sidebar-right.old-ie .sidebar-container {
 /**
  * Components
  */
+.book-demo-section {
+  background-color: #ed9500;
+  background-image: url(../images/book-demo-bg.png);
+  background-size: cover;
+  background-position: center center; }
+  .book-demo-section .demo-wrap {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-items: flex-end;
+    -ms-flex-align: end;
+    align-items: flex-end; }
+    .book-demo-section .demo-wrap .left-preview {
+      -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+      flex-shrink: 0; }
+    .book-demo-section .demo-wrap .right-content {
+      padding: 50px 0;
+      padding-left: 70px;
+      -webkit-flex-basis: 30%;
+      -ms-flex-preferred-size: 30%;
+      flex-basis: 30%; }
+      .book-demo-section .demo-wrap .right-content .title {
+        position: relative;
+        margin-bottom: 70px; }
+        .book-demo-section .demo-wrap .right-content .title h2 {
+          font-size: 34px;
+          font-weight: 300;
+          color: #fff;
+          margin: 0;
+          margin-bottom: 15px;
+          margin-top: 15px; }
+        .book-demo-section .demo-wrap .right-content .title .subtitle {
+          font-size: 18px;
+          color: #b47100;
+          font-weight: 300; }
+        .book-demo-section .demo-wrap .right-content .title:after {
+          content: "";
+          position: absolute;
+          left: 0;
+          width: 66px;
+          height: 2px;
+          bottom: -30px;
+          background: #fff; }
+      .book-demo-section .demo-wrap .right-content .action a {
+        line-height: 41px;
+        padding: 0 50px;
+        border: none; }
+
 .bottom-resources-section {
   background: #f5f5f5;
   position: relative;

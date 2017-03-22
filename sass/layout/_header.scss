@@ -72,7 +72,7 @@
       padding: 0 15px;
       padding-bottom: 17px;
       &.active {
-        a {
+        > a {
           border-bottom: 3px solid $primary-color;
         }
       }
@@ -83,17 +83,35 @@
         font-weight: 500;
         position: relative;
         border-bottom: 3px solid transparent;
+        display: flex;
+        .fa {
+          line-height: 40px;
+          flex-shrink: 0;
+          width: 18px;
+          text-align: center;
+        }
       }
       &:hover{
         > a {
           border-bottom: 3px solid rgba($primary-color, 0.3);
         }
       }
+      &.has-dropdown {
+        position: relative;
+        .dropdown {
+          left: 0;
+          width: 200px;
+        }
+      }
+      &.has-dropdown-big {
+        .dropdown {
+          left: -200px;
+          right: -200px;
+        }
+      }
       .dropdown {
         position: absolute;
         top: 100%;
-        left: -200px;
-        right: -200px;
         z-index: 10;
         background: #000;
         color: #fff;
