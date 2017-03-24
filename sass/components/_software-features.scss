@@ -74,6 +74,9 @@
         padding: 0 50px;
         margin-right: 20px;
         border: none;
+        @include breakpoint(laptop) {
+          padding: 0 35px;
+        }
       }
     }
   }
@@ -94,6 +97,10 @@
   color: #fff;
   text-align: center;
   overflow: hidden;
+  @include breakpoint(laptop) {
+    width: 175px;
+    height: 155px;
+  }
   a {
     color: #fff;
     display: block;
@@ -126,11 +133,17 @@
       font-size: 13px;
       line-height: normal;
       margin: 0;
+      @include breakpoint(laptop) {
+        font-size: 12px;
+      }
     }
     .icon {
       font-size: 66px;
       line-height: 40px;
       margin-bottom: 10px;
+      @include breakpoint(laptop) {
+        font-size: 56px;
+      }
     }
   }
 }

@@ -1,13 +1,10 @@
 .sidebar-toggle {
-  z-index: 100;
-  float: left;
-  line-height: 47px;
-  padding: 0 20px;
-  border: none;
-  position: absolute;
-  left: 15px;
-  top: 50%;
-  @include transform(translateY(-50%));
+    margin: 20px 0;
+    line-height: 41px;
+        border-radius: 4px;
+        background: $secondary-color;
+        color: #fff;
+    padding: 0 20px;
 }
 
 .sidebar-container {
@@ -162,7 +159,7 @@
   }
 }
 
-html[dir="ltr"] .sidebar-right.sidebar-container {
+html .sidebar-container.sidebar-right {
   left: auto;
   right: 0;
 }

@@ -1,4 +1,4 @@
-(function ($) { 
+(function ($) {
 
     $(document).ready(function () {
         var JA_isLoading = false;
@@ -8,7 +8,7 @@
     } else if(/constructor/i.test(window.HTMLElement)){
         $('html').addClass('safari');
     }
-    
+
     var $wrapper = $('body'),
     $inner = $('.sidebar-wrapper'),
     $toggles = $('.sidebar-toggle'),
@@ -19,7 +19,7 @@
     direction = 'left',
     $fixed = null;
 
-        // Sidebar menu behaviour 
+        // Sidebar menu behaviour
         $toogleClass = 'toggle-deeper',
         $toogleDeeper = $("<span><i class='fa fa-angle-down' aria-hidden='true'></i></span>").addClass($toogleClass),
         $deeperLevel = $(".sidebar-container-body ul li.deeper");
@@ -115,14 +115,6 @@
         $close.on ('click', oc_hide);
         $offcanvas.on ('click', handleClick);
 
-        // fix for old ie
-        if ($.browser.msie && $.browser.version < 10) {
-            var p1 = {}, p2 = {};
-            p1['padding-'+direction] = $('.sidebar-container').width();
-            p2[direction] = 0;
-            $inner.animate (p1);
-            $nav.animate (p2);
-        }
         setTimeout (function (){JA_isLoading=false;}, 200);
     };
 

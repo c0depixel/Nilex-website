@@ -6,6 +6,9 @@
         display: inline-block;
         line-height: 27px;
         margin-right: 30px;
+        @include breakpoint(tablet) {
+          margin-right: 15px;
+        }
         a{
           color: #fff;
           display: block;
@@ -28,23 +31,26 @@
         a{
           padding: 0 18px;
           display: block;
-          &:hover {
-            text-decoration: none;
-            background: #333;
-          }
-          .f-nsp {
-            font-size: 16px;
-            color: #696969;
-            vertical-align: middle;
-            margin-right: 3px;
-          }
-          .text {
-            color: $primary-color;
-            font-size: 10px;
-            text-transform: uppercase;
-          }
+          @include breakpoint(tablet) {
+           padding: 0 12px;
+         }
+         &:hover {
+          text-decoration: none;
+          background: #333;
+        }
+        .f-nsp {
+          font-size: 16px;
+          color: #696969;
+          vertical-align: middle;
+          margin-right: 3px;
+        }
+        .text {
+          color: $primary-color;
+          font-size: 10px;
+          text-transform: uppercase;
         }
       }
     }
   }
+}
 }

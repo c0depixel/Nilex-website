@@ -1,7 +1,7 @@
 <div class="top-bar-section">
   <div class="container">
     <div class="row">
-      <div class="col-md-6">
+      <div class="col-md-8 col-sm-8">
         <div class="top-navigation">
           <ul>
             <li><a href="#">Contact us</a></li>
@@ -13,7 +13,7 @@
           </ul>
         </div>
       </div>
-      <div class="col-md-6">
+      <div class="col-md-4 col-sm-4">
         <div class="global">
          <ul>
            <li>

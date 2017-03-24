@@ -29,6 +29,32 @@
       background: #fff;
       width: 100px;
       z-index: 1;
+      @include breakpoint(laptop) {
+        left: 0px;
+      }
+    }
+    @include breakpoint(tablet) {
+      display: none;
+    }
+  }
+  .right-col {
+    @include breakpoint(tablet) {
+      position: relative;
+      z-index: 3;
+      &:after {
+        content: "";
+        position: absolute;
+        left: -7px;
+        top: 0;
+        height: 100%;
+        @include transform(skewX(20deg));
+        background: #fff;
+        width: 100px;
+        z-index: 1;
+        @include breakpoint(laptop) {
+          left: 0px;
+        }
+      }
     }
   }
 }
@@ -64,84 +90,110 @@
   z-index: 2;
   background: #fff;
   position: relative;
+  @include breakpoint(laptop) {
+    padding-left: 0;
+  }
+  @include breakpoint(tablet) {
+    height: 81px;
+  }
   > ul {
     display: flex;
     flex-wrap: nowrap;
-    > li {
-      line-height: 41px;
-      padding: 0 15px;
-      padding-bottom: 17px;
-      &.active {
-        > a {
-          border-bottom: 3px solid $primary-color;
-        }
+    @include breakpoint(tablet) {
+     display: none;
+   }
+   > li {
+    line-height: 41px;
+    padding: 0 15px;
+    padding-bottom: 17px;
+    @include breakpoint(laptop) {
+      padding-right: 8px;
+      padding-left: 8px;
+    }
+    &.active {
+      > a {
+        border-bottom: 3px solid $primary-color;
       }
-      > a{
-        color: $secondary-color;
-        display: block;
-        font-size: 15px;
-        font-weight: 500;
-        position: relative;
-        border-bottom: 3px solid transparent;
-        display: flex;
-        .fa {
-          line-height: 40px;
-          flex-shrink: 0;
-          width: 18px;
-          text-align: center;
-        }
+    }
+    > a{
+      color: $secondary-color;
+      display: block;
+      font-size: 15px;
+      font-weight: 500;
+      position: relative;
+      border-bottom: 3px solid transparent;
+      display: flex;
+      .fa {
+        line-height: 40px;
+        flex-shrink: 0;
+        width: 18px;
+        text-align: center;
       }
-      &:hover{
-        > a {
-          border-bottom: 3px solid rgba($primary-color, 0.3);
-        }
+    }
+    &:hover{
+      > a {
+        border-bottom: 3px solid rgba($primary-color, 0.3);
       }
-      &.has-dropdown {
-        position: relative;
-        .dropdown {
-          left: 0;
-          width: 200px;
-        }
-      }
-      &.has-dropdown-big {
-        .dropdown {
-          left: -200px;
-          right: -200px;
-        }
-      }
+    }
+    &.has-dropdown {
+      position: relative;
       .dropdown {
-        position: absolute;
-        top: 100%;
-        z-index: 10;
-        background: #000;
-        color: #fff;
-        padding: 20px;
-        display: none;
-        li {
-          margin: 0;
-          line-height: normal;
-          padding: 8px 0;
-          a {
-            color: #fff;
-            i {
-              margin-right: 5px;
-            }
-            &:hover {
-              text-decoration: underline;
-            }
+        left: 0;
+        width: 200px;
+      }
+    }
+    &.has-dropdown-big {
+      .dropdown {
+        left: -200px;
+        right: -200px;
+      }
+    }
+    .dropdown {
+      position: absolute;
+      top: 100%;
+      z-index: 10;
+      background: #000;
+      color: #fff;
+      padding: 20px;
+      display: none;
+      li {
+        margin: 0;
+        line-height: normal;
+        padding: 8px 0;
+        a {
+          color: #fff;
+          i {
+            margin-right: 5px;
+          }
+          &:hover {
+            text-decoration: underline;
           }
         }
       }
     }
   }
 }
+}
 
+.toogle-nav-col {
+  display: none;
+  text-align: right;
+  @include breakpoint(tablet) {
+    display: block;
+  }
+}
 
 .right-actions {
   display: flex;
   flex-wrap: nowrap;
   justify-content: flex-end;
   padding: 20px 0;
+  background: #fff;
+  position: relative;
+  z-index: 3;
+  @include breakpoint(tablet) {
+    justify-content: flex-start;
+  }
   .search {
     line-height: 41px;
     margin-right: 15px;
