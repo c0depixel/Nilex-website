@@ -5,11 +5,18 @@
     margin-top: 20px;
   }
   .footer-top-menu {
+    @include breakpoint(tablet) {
+      text-align: center;
+      margin-bottom: 15px;
+    }
     li {
       display: inline-block;
       margin-right: 20px;
       @include breakpoint(laptop) {
         margin-right: 5px;
+      }
+      @include breakpoint(mobile) {
+        margin-bottom: 5px;
       }
       a {
         text-transform: uppercase;
@@ -22,9 +29,17 @@
     }
   }
   .footer-bottom-menu {
+    @include breakpoint(phablet) {
+      text-align: center;
+      margin-bottom: 15px;
+    }
     li {
       display: inline-block;
       margin-right: 20px;
+      @include breakpoint(mobile) {
+        margin-right: 5px;
+        margin-bottom: 5px;
+      }
       a {
         color: #a7a7a7;
         font-size: 12px;
@@ -38,17 +53,38 @@
     display: flex;
     flex-wrap: nowrap;
     align-items: center;
+    @include breakpoint(phablet) {
+      justify-content: center;
+      margin-bottom: 15px;
+    }
+    @include breakpoint(mobile) {
+      flex-direction: column;
+    }
     .text {
       flex-grow: 1;
       color: #a7a7a7;
-      font-size: 12px;
+      font-size: 12px;;
       padding-right: 10px;
+      @include breakpoint(phablet) {
+        flex-basis: 100px;
+        flex-grow: 0;
+      }
+      @include breakpoint(mobile) {
+        flex-basis: auto;
+        margin-bottom: 5px;
+      }
     }
     .input {
       flex-shrink: 0;
       flex-basis: 70%;
       display: flex;
       align-items: center;
+      @include breakpoint(phablet) {
+        flex-basis: 250px;
+      }
+      @include breakpoint(mobile) {
+        flex-basis: auto;
+      }
       form {
         display: flex;
         align-items: center;
@@ -83,6 +119,9 @@
   }
   .social {
     text-align: right;
+    @include breakpoint(phablet) {
+      text-align: center;
+    }
     li {
       display: inline-block;
       margin-right: 12px;
@@ -106,5 +145,8 @@
     text-align: right;
     color: #a7a7a7;
     font-size: 12px;
+    @include breakpoint(phablet) {
+      text-align: center;
+    }
   }
 }

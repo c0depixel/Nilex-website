@@ -22,6 +22,7 @@ ul, ol {
 
 
 .btn{
+  font-size: 14px;
   &.primary {
     background: $primary-color;
     color: #fff;
@@ -42,4 +43,11 @@ ul, ol {
   background-attachment: fixed;
   background-position: center center;
   background-size: cover;
+}
+
+
+#landing-canvas {
+  @include breakpoint(phablet) {
+    display: none;
+  }
 }

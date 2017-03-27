@@ -11,7 +11,61 @@
       </div>
     </div>
     <div class="row">
-
+      <div class="circle-wrapper">
+        <div class="circle-logo">
+            <img src="images/solution-logo.png">
+        </div>
+        <div class="circles">
+          <div class="circle">
+            <div class="icon">
+              <img src="images/solution-1">
+            </div>
+            <h3>
+              ITSM
+            </h3>
+          </div>
+          <div class="circle">
+            <div class="icon">
+            <img src="images/solution-2">
+            </div>
+            <h3>
+              Shared Services
+            </h3>
+          </div>
+          <div class="circle">
+            <div class="icon">
+              <img src="images/solution-3">
+            </div>
+            <h3>
+              Customer Support
+            </h3>
+          </div>
+          <div class="circle">
+            <div class="icon">
+              <img src="images/solution-4">
+            </div>
+            <h3>
+              Social Media Monitoring
+            </h3>
+          </div>
+          <div class="circle">
+            <div class="icon">
+              <img src="images/solution-5">
+            </div>
+            <h3>
+              Facility Management
+            </h3>
+          </div>
+          <div class="circle">
+            <div class="icon">
+              <img src="images/solution-6">
+            </div>
+            <h3>
+              Field Service Management
+            </h3>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </div>

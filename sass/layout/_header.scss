@@ -2,6 +2,9 @@
   background: #fff;
   position: relative;
   box-shadow: 0 0 4px 2px rgba(0,0,0,0.2);
+  @include breakpoint(tablet) {
+    box-shadow: none;
+  }
   &:after {
     content: "";
     background: $secondary-color;
@@ -11,6 +14,9 @@
     width: 50%;
     position: absolute;
     z-index: 1;
+    @include breakpoint(phablet) {
+      width: 70%;
+    }
   }
   .container {
     position: relative;
@@ -30,7 +36,7 @@
       width: 100px;
       z-index: 1;
       @include breakpoint(laptop) {
-        left: 0px;
+        left: 0;
       }
     }
     @include breakpoint(tablet) {
@@ -56,6 +62,35 @@
         }
       }
     }
+    @include breakpoint(phablet) {
+      display: none;
+    }
+  }
+  .toggle-nav-col {
+    display: none;
+    text-align: right;
+    @include breakpoint(tablet) {
+      display: block;
+    }
+    @include breakpoint(phablet) {
+      position: relative;
+      z-index: 3;
+      .sidebar-toggle {
+        position: relative;
+        z-index: 5;
+      }
+      &:after {
+        content: "";
+        position: absolute;
+        left: -30px;
+        top: 0;
+        height: 100%;
+        @include transform(skewX(20deg));
+        background: #fff;
+        width: 100px;
+        z-index: 1;
+      }
+    }
   }
 }
 
@@ -79,6 +114,12 @@
     position: relative;
     z-index: 2;
     padding: 30px 0;
+    @include breakpoint(phablet) {
+      padding: 25px 0;
+    }
+    @include breakpoint(mobile) {
+      padding: 20px 0;
+    }
   }
 }
 
@@ -141,11 +182,13 @@
         left: 0;
         width: 200px;
       }
-    }
-    &.has-dropdown-big {
-      .dropdown {
-        left: -200px;
-        right: -200px;
+      &.big {
+        position: static;
+        .dropdown {
+          left: -200px;
+          right: -200px;
+          width: auto;
+        }
       }
     }
     .dropdown {
@@ -175,13 +218,7 @@
 }
 }
 
-.toogle-nav-col {
-  display: none;
-  text-align: right;
-  @include breakpoint(tablet) {
-    display: block;
-  }
-}
+
 
 .right-actions {
   display: flex;
@@ -210,6 +247,19 @@
       padding: 0 30px;
       font-size: 15px;
       border: none;
+    }
+  }
+}
+
+.sidebar-container-body {
+  .right-actions {
+    padding: 10px 0 !important;
+    padding-left: 12px !important;
+    @include breakpoint(tablet) {
+      display: none;
+    }
+    @include breakpoint(phablet) {
+      display: flex;
     }
   }
 }

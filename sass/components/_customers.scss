@@ -4,20 +4,49 @@
   padding: 50px 0;
   overflow: hidden;
   padding-bottom: 70px;
+  @include breakpoint(laptop) {
+    padding-top: 45px;
+  }
+  @include breakpoint(tablet) {
+    padding-top: 40px;
+    padding-bottom: 45px;
+  }
+  @include breakpoint(phablet) {
+    padding-top: 35px;
+  }
+  @include breakpoint(mobile) {
+    padding-top: 30px;
+    padding-bottom: 40px;
+  }
   .title {
     position: relative;
     margin-bottom: 60px;
     text-align: center;
+    @include breakpoint(laptop) {
+      margin-bottom: 55px;
+    }
+    @include breakpoint(tablet) {
+      margin-bottom: 50px;
+    }
+    @include breakpoint(phablet) {
+      margin-bottom: 45px;
+    }
+    @include breakpoint(mobile) {
+      margin-bottom: 40px;
+    }
     h2 {
-      font-size: 34px;
+      @include font-size(34px);
       font-weight: 300;
       color: #fff;
       margin: 0;
       margin-bottom: 15px;
       margin-top: 0;
+      @include breakpoint(tablet) {
+        margin-bottom: 10px;
+      }
     }
     .subtitle {
-      font-size: 18px;
+      @include font-size(18px);
       color: #ffbf51;
       font-weight: 300;
     }
@@ -30,11 +59,17 @@
       margin-left: -33px;
       bottom: -30px;
       background: #fff;
+      @include breakpoint(tablet) {
+        bottom: -25px;
+      }
+      @include breakpoint(mobile) {
+        bottom: -15px;
+      }
     }
   }
   .customers-slider {
     .arrow {
-      font-size: 36px;
+      @include font-size(36px);
       position: absolute;
       cursor: pointer;
       color: $primary-color;
@@ -47,21 +82,53 @@
         left: -30px;
         top: 50%;
         margin-top: -20px;
+        @include breakpoint(tablet) {
+          left: -10px;
+        }
       }
       &.next {
         right: -30px;
         top: 50%;
         margin-top: -20px;
+        @include breakpoint(tablet) {
+          right: -10px;
+        }
       }
     }
     .wrap-slide {
       padding: 30px 50px;
+      @include breakpoint(laptop) {
+        padding: 25px 40px;
+      }
+      @include breakpoint(tablet) {
+        padding: 20px 35px;
+      }
+      @include breakpoint(phablet) {
+        padding: 15px 30px;
+      }
+      @include breakpoint(mobile) {
+        padding: 10px 20px;
+      }
       .text {
-        font-size: 18px;
+        @include font-size(18px);
         font-style: italic;
         color: #fff;
         line-height: 34px;
         margin-bottom: 30px;
+        @include breakpoint(laptop) {
+          line-height: 32px;
+        }
+        @include breakpoint(tablet) {
+          line-height: 28px;
+          margin-bottom: 20px;
+        }
+        @include breakpoint(phablet) {
+          line-height: 26px;
+        }
+        @include breakpoint(mobile) {
+          line-height: 24px;
+          margin-top: 0;
+        }
       }
       .person {
         display: flex;
@@ -74,6 +141,22 @@
             overflow: hidden;
             width: 82px;
             height: 82px;
+            @include breakpoint(laptop) {
+              width: 75px;
+              height: 75px;
+            }
+            @include breakpoint(tablet) {
+              width: 70px;
+              height: 70px;
+            }
+            @include breakpoint(phablet) {
+              width: 65px;
+              height: 65px;
+            }
+            @include breakpoint(mobile) {
+              width: 60px;
+              height: 60px;
+            }
             img {
               display: block;
               width: 100%;
@@ -85,6 +168,12 @@
         .info {
           padding-left: 32px;
           flex-grow: 1;
+          @include breakpoint(tablet) {
+            padding-left: 25px;
+          }
+          @include breakpoint(mobile) {
+            padding-left: 20px;
+          }
           .name {
             text-transform: uppercase;
             color: #fff;
@@ -146,12 +235,21 @@
 .clients-section {
   border-bottom: 1px solid #e5e5e5;
   padding: 40px 0;
+  @include breakpoint(tablet) {
+    padding: 30px 0;
+  }
+  @include breakpoint(mobile) {
+    padding: 20px 0;
+  }
   .clients-slider {
     text-align: center;
     a {
       display: inline-block;
       opacity: 0.4;
       @include transition(all .3s ease);
+      img {
+        max-width: 100%;
+      }
       &:hover {
         opacity: 1;
       }
@@ -160,10 +258,20 @@
   .action {
     text-align: center;
     margin-top: 40px;
+    @include breakpoint(tablet) {
+      margin-top: 30px;
+    }
+    @include breakpoint(mobile) {
+      margin-top: 20px;
+    }
     a {
       line-height: 41px;
       padding: 0 60px;
       font-size: 15px;
+      @include breakpoint(phablet) {
+        padding: 0 30px;
+        font-size: 14px;
+      }
     }
   }
 }

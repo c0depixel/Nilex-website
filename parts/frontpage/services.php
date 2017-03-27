@@ -13,7 +13,7 @@
       </div>
     </div>
     <div class="row">
-      <div class="col-md-3">
+      <div class="col-md-3 col-sm-6">
         <div class="service-block">
           <a href="#">
             <div class="image">
@@ -26,7 +26,7 @@
           </a>
         </div>
       </div>
-      <div class="col-md-3">
+      <div class="col-md-3 col-sm-6">
         <div class="service-block">
           <a href="#">
             <div class="image">
@@ -39,7 +39,7 @@
         </a>
       </div>
     </div>
-    <div class="col-md-3">
+    <div class="col-md-3 col-sm-6">
       <div class="service-block">
         <a href="#">
           <div class="image">
@@ -52,7 +52,7 @@
         </a>
       </div>
     </div>
-    <div class="col-md-3">
+    <div class="col-md-3 col-sm-6">
       <div class="service-block">
         <a href="#">
           <div class="image">

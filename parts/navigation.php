@@ -6,7 +6,7 @@
     <a href="#">Products <i class="fa fa-angle-down" aria-hidden="true"></i></a>
     <div class="dropdown">
       <ul>
-        <li><a href="#"><i class="fa fa-external-link" aria-hidden="true"></i> Self Service Portal</a></li>
+        <li class="active"><a href="#"><i class="fa fa-external-link" aria-hidden="true"></i> Self Service Portal</a></li>
         <li><a href="#"><i class="fa fa-external-link" aria-hidden="true"></i> Self Service Portal</a></li>
         <li><a href="#"><i class="fa fa-external-link" aria-hidden="true"></i> Self Service Portal</a></li>
         <li><a href="#"><i class="fa fa-external-link" aria-hidden="true"></i> Self Service Portal</a></li>
@@ -16,7 +16,7 @@
       </ul>
     </div>
   </li>
-  <li class="has-dropdown-big">
+  <li class="has-dropdown big">
     <a href="#">Features <i class="fa fa-angle-down" aria-hidden="true"></i></a>
     <div class="dropdown">
       <div class="container-fluid">
