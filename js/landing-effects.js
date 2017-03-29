@@ -4,15 +4,16 @@
 
     var width, height, largeHeader, canvas, ctx, points, target, animateHeader = true;
 
-    // Main
-    initHeader();
-    initAnimation();
-    addListeners();
+    largeHeader = document.getElementById('landing-section');
+
+    if (largeHeader) {
+      initHeader();
+      initAnimation();
+      addListeners();
+    }
 
     function initHeader() {
 
-
-        largeHeader = document.getElementById('landing-section');
         width = largeHeader.offsetWidth;
         height = largeHeader.offsetHeight;
         target = {x: width/2, y: height/2};

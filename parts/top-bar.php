@@ -8,7 +8,7 @@
         </div>
         <div class="top-navigation">
           <ul>
-            <li><a href="#">Contact us</a></li>
+            <li><a href="contact.php">Contact us</a></li>
             <li><a href="#">Partners</a></li>
             <li><a href="#">Resources</a></li>
             <li><a href="#">News & Events</a></li>

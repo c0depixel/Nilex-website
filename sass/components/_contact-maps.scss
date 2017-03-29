@@ -1,0 +1,19 @@
+.contact-maps-section {
+  .wrap-maps {
+    display: flex;
+    flex-wrap: nowrap;
+    > div {
+      width: 50%;
+      > div {
+        height: 470px;
+        width: 100%;
+      }
+      &.left-map{
+        padding-right: 1px;
+      }
+      &.right-map{
+        padding-left: 1px;
+      }
+    }
+  }
+}

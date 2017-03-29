@@ -1,0 +1,51 @@
+.contact-info-section {
+  padding: 40px 0 30px 0;
+  .wrap-info {
+    display: flex;
+    flex-wrap: wrap;
+    > div {
+      width: 33%;
+      padding: 0 60px 30px 60px;
+      &:nth-child(3n+1) {
+        padding: 0 0 30px 0;
+      }
+    }
+    h3 {
+      @include font-size(26px);
+      font-weight: 300;
+      position: relative;
+      margin-bottom: 40px;
+      color: #000;
+      margin-top: 0;
+      &:after {
+        content: "";
+        position: absolute;
+        left: 0;
+        width: 66px;
+        height: 2px;
+        bottom: -20px;
+        background: $primary-color;
+      }
+    }
+    ul {
+      li {
+        position: relative;
+        display: flex;
+        align-items: center;
+        min-height: 40px;
+        .icon {
+          position: absolute;
+          left: 0;
+          top: 50%;
+          @include transform(translateY(-50%));
+        }
+        .text {
+          color: #acacac;
+          @include font-size(18px);
+          font-weight: 300;
+          padding-left: 38px;
+        }
+      }
+    }
+  }
+}
