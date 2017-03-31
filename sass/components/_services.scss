@@ -18,6 +18,12 @@
   .container {
     position: relative;
     z-index: 2;
+    .blocks-col {
+      @include breakpoint(mobile) {
+        display: flex;
+        flex-wrap: wrap;
+      }
+    }
   }
   .left-art {
     background: url(../images/services-left-art.png);
@@ -152,6 +158,7 @@
         }
         @include breakpoint(600px) {
           max-height: 155px;
+          max-width: 100%;
         }
       }
       .icon {
@@ -164,6 +171,9 @@
           @include breakpoint(600px) {
             max-height: 70px;
           }
+          @include breakpoint(mobile) {
+            max-height: 60px;
+          }
         }
       }
     }
@@ -172,6 +182,7 @@
       @include font-size(26px);
       margin: 0;
       font-weight: 300;
+      word-wrap: break-word;
     }
   }
 }

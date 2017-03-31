@@ -2,17 +2,19 @@
   margin: 20px 0;
   line-height: 41px;
   border-radius: 4px;
-  background: $secondary-color;
-  color: #fff;
+  background: transparent;
+  color: $secondary-color;
   padding: 0 16px;
-  font-size: 16px;
+  padding-right: 8px;
+  font-size: 24px;
   @include breakpoint(phablet) {
     margin: 15px 0;
   }
   @include breakpoint(mobile) {
     margin: 12px 0;
     padding: 0 15px;
-    font-size: 15px;
+    padding-right: 7px;
+    font-size: 22px;
     line-height: 37px;
   }
 }
@@ -132,13 +134,14 @@
         .fa-angle-down {
           position: absolute;
           top: 50%;
-          right: 5px;
+          right: 0;
           font-size: 18px !important;
           color: #fff;
           @include transform(translateY(-50%));
-          width: 40px;
-          height: 40px;
-          line-height: 40px;
+          width: 48px;
+          height: 48px;
+          line-height: 48px;
+          border-left: 1px solid rgba(0,0,0,0.1);
           margin: 0;
           text-align: center;
         }

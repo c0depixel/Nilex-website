@@ -65,8 +65,16 @@
       li {
         border-left: 1px solid #464646;
         line-height: 27px;
+        &:first-child{
+          @include breakpoint(phablet) {
+            border-left: none;
+          }
+        }
         &:last-child {
           border-right: 1px solid #464646;
+          @include breakpoint(phablet) {
+            border-right: none;
+          }
         }
         a{
           padding: 0 18px;

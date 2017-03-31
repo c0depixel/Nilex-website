@@ -39,7 +39,7 @@
 
     $('.customers-slider').slick({
       slidesToShow: 2,
-      slidesToScroll: 1,
+      slidesToScroll: 2,
       arrows: true,
       dots: true,
       autoplay: true,

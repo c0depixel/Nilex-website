@@ -71,10 +71,12 @@
     text-align: right;
     @include breakpoint(tablet) {
       display: block;
+      padding-left: 0;
     }
     @include breakpoint(phablet) {
       position: relative;
       z-index: 3;
+      padding-left: 15px;
       .sidebar-toggle {
         position: relative;
         z-index: 5;
@@ -228,9 +230,6 @@
   background: #fff;
   position: relative;
   z-index: 3;
-  @include breakpoint(tablet) {
-    justify-content: flex-start;
-  }
   .search {
     line-height: 41px;
     margin-right: 15px;
@@ -255,9 +254,8 @@
   .right-actions {
     padding: 10px 0 !important;
     padding-left: 12px !important;
-    @include breakpoint(tablet) {
-      display: none;
-    }
+    justify-content: flex-start;
+    display: none;
     @include breakpoint(phablet) {
       display: flex;
     }

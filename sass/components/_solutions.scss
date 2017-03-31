@@ -101,10 +101,10 @@ $radius-distance: 22.5px;
       @include transform(scale(1));
       position: static;
       height: auto;
-      padding: 20px 0 200px 0;
+      padding: 20px 0 150px 0;
     }
     @include breakpoint(mobile){
-      padding: 10px 0 200px 0;
+      padding: 10px 0 130px 0;
     }
     &:after {
       content: "";
@@ -139,6 +139,10 @@ $radius-distance: 22.5px;
       text-align: center;
       padding-top: 100px;
       z-index: 2;
+      @include breakpoint(phablet){
+        padding-top: 60px;
+        bottom: -270px;
+      }
     }
     .circles {
       left: 50%;
@@ -155,42 +159,68 @@ $radius-distance: 22.5px;
       }
       @include breakpoint(phablet){
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
-        vertical-align: center;
+        flex-wrap: wrap;
+        padding: 0 15px;
       }
       .circle {
         margin-left: -90px;
-        background: transparent;
-        border: 3px solid rgba(255,255,255,0.35);
-        border-radius: 50%;
         width: 180px;
         height: 180px;
-        text-align: center;
-        padding: 30px;
-        display: block;
         position: absolute;
         z-index: 2;
+        display: block;
         @include breakpoint(phablet){
           position: static;
           -webkit-transform: none !important;
           transform: none !important;
           margin-left: 0;
           margin-bottom: 25px;
+          width: 50%;
+          height: auto;
+          display: flex;
+          align-items: center;
+          justify-content: center;
         }
         @include breakpoint(mobile){
           margin-bottom: 15px;
         }
-        .icon {
-          padding-top: 10px;
-          padding-bottom: 20px;
-        }
-        h3{
-          margin: 0;
-          padding: 0;
-          color: #fff;
-          font-weight: 500;
-          font-size: 15px;
+        .wrap-circle {
+          border: 3px solid rgba(255,255,255,0.35);
+          background: transparent;
+          border-radius: 50%;
+          width: 180px;
+          height: 180px;
+          text-align: center;
+          padding: 30px;
+          display: block;
+          @include breakpoint(mobile){
+            width: 130px;
+            height: 130px;
+            padding: 15px;
+          }
+          .icon {
+            padding-top: 10px;
+            padding-bottom: 20px;
+            @include breakpoint(mobile){
+              padding-top: 10px;
+              padding-bottom: 10px;
+              img {
+                max-width: 40%;
+              }
+            }
+          }
+          h3{
+            margin: 0;
+            padding: 0;
+            color: #fff;
+            font-weight: 500;
+            font-size: 15px;
+            @include breakpoint(mobile){
+              font-size: 12px;
+            }
+          }
         }
       }
       .circle:nth-child(1) {

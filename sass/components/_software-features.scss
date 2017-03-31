@@ -13,6 +13,12 @@
   @include breakpoint(mobile) {
     padding: 40px 0;
   }
+  @include breakpoint(600px) {
+    padding-top: 120px;
+  }
+  @include breakpoint(380px) {
+    padding-top: 110px;
+  }
   .container {
     position: relative;
     z-index: 2;
@@ -47,7 +53,44 @@
       @include breakpoint(600px) {
         flex-direction: column;
         > div {
-          margin-bottom: 15px;
+          margin-top: -77.5px;
+          &:nth-of-type(odd) {
+            margin-left: -132px;
+          }
+          &:nth-of-type(even) {
+            margin-left: 132px;
+          }
+        }
+        &.bottom {
+          > div {
+            &:nth-of-type(even) {
+              margin-left: -132px;
+            }
+            &:nth-of-type(odd) {
+              margin-left: 132px;
+            }
+          }
+        }
+      }
+      @include breakpoint(380px) {
+        > div {
+          margin-top: -70px;
+          &:nth-of-type(odd) {
+            margin-left: -120px;
+          }
+          &:nth-of-type(even) {
+            margin-left: 120px;
+          }
+        }
+        &.bottom {
+          > div {
+            &:nth-of-type(even) {
+              margin-left: -120px;
+            }
+            &:nth-of-type(odd) {
+              margin-left: 120px;
+            }
+          }
         }
       }
     }
@@ -180,6 +223,10 @@
   @include breakpoint(laptop) {
     width: 175px;
     height: 155px;
+  }
+  @include breakpoint(380px) {
+    width: 160px;
+    height: 140px;
   }
   a {
     color: #fff;

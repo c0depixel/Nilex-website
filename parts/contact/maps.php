@@ -9,6 +9,7 @@
   </div>
 </div>
 
+<script type="text/javascript" src="js/infobubble-compiled.js"></script>
 
 <script type="text/javascript"
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDKus-6grL7OZgnEogkvih8hiRGUhXjPjU"></script>
@@ -78,6 +79,17 @@
     rightMap();
 
     function leftMap() {
+
+      var infoContent = '<div class="infowindow-content">' +
+        '<h4>Headquarters</h4>' +
+        '<div class="address">' +
+        'Nilex AB<br>' +
+        'East Sandgatan 12<br>' +
+        '252 27  Helsingborg<br>' +
+        'Sweden' +
+        '</div>' +
+        '</div>';
+
       var mapOptions = {
         zoom: 15,
         center: new google.maps.LatLng(42.424254, 19.272448),
@@ -91,9 +103,48 @@
         icon: '/images/pin-o.png',
         title: 'Snazzy!'
       });
+
+      var infoBubble = new InfoBubble({
+        map: map,
+        content: infoContent,
+        position: new google.maps.LatLng(-32.0, 149.0),
+        shadowStyle: 0,
+        padding: 16,
+        backgroundColor: 'rgba(0,0,0,0.6)',
+        borderRadius: 0,
+        arrowSize: 10,
+        disableAnimation: false,
+        borderWidth: 0,
+        borderColor: 'rgba(0,0,0,0.6)',
+        closeSrc: '/images/close-pin.png',
+        disableAutoPan: false,
+        hideCloseButton: false,
+        minWidth: 215,
+        minHeight: 140,
+        arrowStyle: 0,
+        backgroundClassName: 'infowindow primary'
+      });
+
+
+      marker.addListener('click', function () {
+        infoBubble.open(map, marker);
+      });
+
+
     }
 
     function rightMap() {
+
+      var infoContent = '<div class="infowindow-content">' +
+        '<h4>Headquarters</h4>' +
+        '<div class="address">' +
+        'Nilex AB<br>' +
+        'East Sandgatan 12<br>' +
+        '252 27  Helsingborg<br>' +
+        'Sweden' +
+        '</div>' +
+        '</div>';
+
       var mapOptions = {
         zoom: 15,
         center: new google.maps.LatLng(42.446284, 19.250572),
@@ -107,6 +158,34 @@
         icon: '/images/pin-g.png',
         title: 'Snazzy!'
       });
+
+
+      var infoBubble = new InfoBubble({
+        map: map,
+        content: infoContent,
+        position: new google.maps.LatLng(-32.0, 149.0),
+        shadowStyle: 0,
+        padding: 16,
+        backgroundColor: 'rgba(0,0,0,0.6)',
+        borderRadius: 0,
+        arrowSize: 10,
+        disableAnimation: false,
+        borderWidth: 0,
+        borderColor: 'rgba(0,0,0,0.6)',
+        closeSrc: '/images/close-pin.png',
+        disableAutoPan: false,
+        hideCloseButton: false,
+        minWidth: 215,
+        minHeight: 140,
+        arrowStyle: 0,
+        backgroundClassName: 'infowindow secondary'
+      });
+
+
+      marker.addListener('click', function () {
+        infoBubble.open(map, marker);
+      });
+
     }
 
   }

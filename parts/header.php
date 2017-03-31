@@ -13,7 +13,7 @@
           <?php include 'parts/navigation.php'; ?>
         </div>
       </div>
-      <div class="col-md-3 col-sm-7 right-col">
+      <div class="col-md-3 col-sm-8 right-col">
         <div class="right-actions">
           <div class="search">
             <a href="#">
@@ -27,7 +27,7 @@
           </div>
         </div>
       </div>
-      <div class="col-sm-2 col-xs-4 toggle-nav-col">
+      <div class="col-sm-1 col-xs-4 toggle-nav-col">
         <button class="sidebar-toggle" type="button" data-pos="right" data-nav="#sidebar" data-effect="sidebar-effect-4" aria-hidden="true">
           <i class="fa fa-bars"></i>
         </button>
