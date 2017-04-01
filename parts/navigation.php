@@ -1,6 +1,6 @@
 <ul>
   <li>
-    <a href="#">Company</a>
+    <a href="company.php">Company</a>
   </li>
   <li class="active has-dropdown">
     <a href="#">Products <i class="fa fa-angle-down" aria-hidden="true"></i></a>
