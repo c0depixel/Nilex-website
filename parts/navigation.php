@@ -1,6 +1,12 @@
 <ul>
   <li>
-    <a href="company.php">Company</a>
+    <a href="company.php">Company <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+    <div class="dropdown">
+      <ul>
+        <li><a href="#"><i class="fa fa-external-link" aria-hidden="true"></i> About Us</a></li>
+        <li><a href="#"><i class="fa fa-external-link" aria-hidden="true"></i> Careers</a></li>
+      </ul>
+    </div>
   </li>
   <li class="active has-dropdown">
     <a href="#">Products <i class="fa fa-angle-down" aria-hidden="true"></i></a>

@@ -92,6 +92,7 @@
 
       var mapOptions = {
         zoom: 15,
+        scrollwheel: false,
         center: new google.maps.LatLng(42.424254, 19.272448),
         styles: styles
       };
@@ -130,6 +131,10 @@
         infoBubble.open(map, marker);
       });
 
+      google.maps.event.addListenerOnce(map, 'idle', function(){
+        infoBubble.open(map, marker);
+      });
+
 
     }
 
@@ -147,6 +152,7 @@
 
       var mapOptions = {
         zoom: 15,
+        scrollwheel: false,
         center: new google.maps.LatLng(42.446284, 19.250572),
         styles: styles
       };
@@ -163,7 +169,7 @@
       var infoBubble = new InfoBubble({
         map: map,
         content: infoContent,
-        position: new google.maps.LatLng(-32.0, 149.0),
+        position: new google.maps.LatLng(-32.0, 19.0),
         shadowStyle: 0,
         padding: 16,
         backgroundColor: 'rgba(0,0,0,0.6)',
@@ -183,6 +189,10 @@
 
 
       marker.addListener('click', function () {
+        infoBubble.open(map, marker);
+      });
+
+      google.maps.event.addListenerOnce(map, 'idle', function(){
         infoBubble.open(map, marker);
       });
 
