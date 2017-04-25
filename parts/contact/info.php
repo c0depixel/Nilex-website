@@ -7,11 +7,11 @@
             <h3>Customer service</h3>
             <ul>
               <li>
-                <div class="icon"><img src="images/phone-icon.png"></div>
+                <div class="icon"><span class="f-nsp f-nsp-new-phone"></span></div>
                 <div class="text">+46 42 180050</div>
               </li>
               <li>
-                <div class="icon"><img src="images/mail-icon.png"></div>
+                <div class="icon"><span class="f-nsp f-nsp-email"></span></div>
                 <div class="text">kundservice@nilex.se</div>
               </li>
             </ul>
@@ -20,11 +20,11 @@
             <h3>Sales</h3>
             <ul>
               <li>
-                <div class="icon"><img src="images/phone-icon.png"></div>
+                <div class="icon"><span class="f-nsp f-nsp-new-phone"></span></div>
                 <div class="text">+46 42 180050</div>
               </li>
               <li>
-                <div class="icon"><img src="images/mail-icon.png"></div>
+                <div class="icon"><span class="f-nsp f-nsp-email"></span></div>
                 <div class="text">kundservice@nilex.se</div>
               </li>
             </ul>
@@ -33,15 +33,15 @@
             <h3>Technical support</h3>
             <ul>
               <li>
-                <div class="icon"><img src="images/phone-icon.png"></div>
+                <div class="icon"><span class="f-nsp f-nsp-new-phone"></span></div>
                 <div class="text">+46 42 180050</div>
               </li>
               <li>
-                <div class="icon"><img src="images/mail-icon.png"></div>
+                <div class="icon"><span class="f-nsp f-nsp-email"></span></div>
                 <div class="text">support@nilex.se</div>
               </li>
               <li>
-                <div class="icon"><img src="images/web-icon.png"></div>
+                <div class="icon"><span class="f-nsp f-nsp-web"></span></div>
                 <div class="text">http://support.nilex.se</div>
               </li>
             </ul>
@@ -50,7 +50,7 @@
             <h3>Headquarters in Helsingborg</h3>
             <ul>
               <li>
-                <div class="icon"><img src="images/phone-icon.png"></div>
+                <div class="icon"><span class="f-nsp f-nsp-new-phone"></span></div>
                 <div class="text">+088-722 96 34</div>
               </li>
             </ul>
@@ -59,7 +59,7 @@
             <h3>Officies in Stockholm</h3>
             <ul>
               <li>
-                <div class="icon"><img src="images/phone-icon.png"></div>
+                <div class="icon"><span class="f-nsp f-nsp-new-phone"></span></div>
                 <div class="text">+088-722 96 34</div>
               </li>
             </ul>

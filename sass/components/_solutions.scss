@@ -203,9 +203,20 @@ $radius-distance: 22.5px;
           .icon {
             padding-top: 10px;
             padding-bottom: 20px;
+            color: $primary-color;
+            @include font-size(70px);
+            line-height: 50px;
+            .f-nsp {
+              line-height: 55px;
+            }
             @include breakpoint(mobile){
               padding-top: 10px;
               padding-bottom: 10px;
+              @include font-size(60px);
+              line-height: 40px;
+              .f-nsp {
+                line-height: 40px;
+              }
               img {
                 max-width: 40%;
               }

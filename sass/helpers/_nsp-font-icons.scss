@@ -228,7 +228,19 @@ $icons: (
   "service-catalog-categories" "π",
   "service-catalog-items" "˝",
   "recycle" "∞",
-  "full-message" "þ"
+  "implementation" "\FB01",
+  "training" "™",
+  "consulting" "™",
+  "support" "ﬂ",
+  "itsm" "¼",
+  "shared-services" "½",
+  "customer-support" "¾",
+  "social-media-monitoring" "¿",
+  "facility-management" "¸",
+  "field-service-management" "»",
+  "new-phone" "\00a0",
+  "email" "¦",
+  "web" "·"
 );
 
 @each $icon in $icons {

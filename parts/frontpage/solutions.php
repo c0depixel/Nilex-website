@@ -19,7 +19,7 @@
           <div class="circle">
             <div class="wrap-circle">
               <div class="icon">
-                <img src="images/solution-1">
+                <span class="f-nsp f-nsp-itsm"></span>
               </div>
               <h3>
                 ITSM
@@ -29,7 +29,7 @@
           <div class="circle">
             <div class="wrap-circle">
               <div class="icon">
-                <img src="images/solution-2">
+                <span class="f-nsp f-nsp-shared-services"></span>
               </div>
               <h3>
                 Shared Services
@@ -39,7 +39,7 @@
           <div class="circle">
             <div class="wrap-circle">
               <div class="icon">
-                <img src="images/solution-3">
+                <span class="f-nsp f-nsp-customer-support"></span>
               </div>
               <h3>
                 Customer Support
@@ -49,7 +49,7 @@
           <div class="circle">
             <div class="wrap-circle">
               <div class="icon">
-                <img src="images/solution-4">
+                <span class="f-nsp f-nsp-social-media-monitoring"></span>
               </div>
               <h3>
                 Social Media Monitoring
@@ -59,7 +59,7 @@
           <div class="circle">
             <div class="wrap-circle">
               <div class="icon">
-                <img src="images/solution-5">
+                <span class="f-nsp f-nsp-facility-management"></span>
               </div>
               <h3>
                 Facility Management
@@ -69,7 +69,7 @@
           <div class="circle">
             <div class="wrap-circle">
               <div class="icon">
-                <img src="images/solution-6">
+                <span class="f-nsp f-nsp-field-service-management"></span>
               </div>
               <h3>
                 Field Service Management

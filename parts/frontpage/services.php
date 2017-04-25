@@ -19,7 +19,7 @@
             <div class="image">
               <img src="/images/services-implementation.png">
               <div class="icon">
-                <img src="/images/implementation-icon.png">
+                <span class="f-nsp f-nsp-implementation"></span>
               </div>
             </div>
             <h3>Implementation </h3>
@@ -32,7 +32,7 @@
             <div class="image">
              <img src="/images/service-training.png">
              <div class="icon">
-              <img src="/images/training-icon.png">
+               <span class="f-nsp f-nsp-training"></span>
             </div>
           </div>
           <h3>Training </h3>
@@ -45,7 +45,7 @@
           <div class="image">
             <img src="/images/services-consulting.png">
             <div class="icon">
-              <img src="/images/consulting-icon.png">
+              <span class="f-nsp f-nsp-consulting"></span>
             </div>
           </div>
           <h3>Consulting</h3>
@@ -58,7 +58,7 @@
           <div class="image">
             <img src="/images/services-support.png">
             <div class="icon">
-              <img src="/images/support-icon.png">
+              <span class="f-nsp f-nsp-support"></span>
             </div>
           </div>
           <h3>Support</h3>

@@ -19,10 +19,10 @@
               </div>
               <div class="wrap select">
                 <select required>
-                  <option selected disabled>This is about?</option>
-                  <option>Test 1</option>
-                  <option>Lorem ipsum dolor sit amet</option>
-                  <option>Consectetur adipisicing elit</option>
+                  <option selected disabled value="">This is about?</option>
+                  <option value="test1">Test 1</option>
+                  <option value="test2">Lorem ipsum dolor sit amet</option>
+                  <option value="test3">Consectetur adipisicing elit</option>
                 </select>
               </div>
             </div>

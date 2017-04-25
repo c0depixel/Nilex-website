@@ -805,8 +805,44 @@ p {
 .f-nsp-recycle:before {
   content: "∞"; }
 
-.f-nsp-full-message:before {
-  content: "þ"; }
+.f-nsp-implementation:before {
+  content: "ﬁ"; }
+
+.f-nsp-training:before {
+  content: "™"; }
+
+.f-nsp-consulting:before {
+  content: "™"; }
+
+.f-nsp-support:before {
+  content: "ﬂ"; }
+
+.f-nsp-itsm:before {
+  content: "¼"; }
+
+.f-nsp-shared-services:before {
+  content: "½"; }
+
+.f-nsp-customer-support:before {
+  content: "¾"; }
+
+.f-nsp-social-media-monitoring:before {
+  content: "¿"; }
+
+.f-nsp-facility-management:before {
+  content: "¸"; }
+
+.f-nsp-field-service-management:before {
+  content: "»"; }
+
+.f-nsp-new-phone:before {
+  content: " "; }
+
+.f-nsp-email:before {
+  content: "¦"; }
+
+.f-nsp-web:before {
+  content: "·"; }
 
 /**
  * Layout
@@ -2856,6 +2892,8 @@ html[dir="ltr"] .sidebar-right.old-ie .sidebar-container {
       -webkit-background-clip: padding-box;
       background-clip: padding-box;
       color: #fff; }
+      .landing-section .content .actions a i {
+        margin-left: 3px; }
       @media (max-width: 768px) {
         .landing-section .content .actions a {
           font-size: 14px;
@@ -3030,7 +3068,16 @@ html[dir="ltr"] .sidebar-right.old-ie .sidebar-container {
         -o-transform: translateX(-50%) translateY(-50%) perspective(1px) translateZ(0);
         -ms-transform: translateX(-50%) translateY(-50%) perspective(1px) translateZ(0);
         -webkit-transform: translateX(-50%) translateY(-50%) perspective(1px) translateZ(0);
-        transform: translateX(-50%) translateY(-50%) perspective(1px) translateZ(0); }
+        transform: translateX(-50%) translateY(-50%) perspective(1px) translateZ(0);
+        font-size: 115px;
+        font-size: 11.5rem;
+        line-height: 80px;
+        color: #fff; }
+        @media (max-width: 480px) {
+          .services-section .service-block .image .icon {
+            font-size: 90px;
+            font-size: 9rem;
+            line-height: 50px; } }
         .services-section .service-block .image .icon img {
           max-height: 90px; }
           @media (max-width: 600px) {
@@ -3563,11 +3610,22 @@ html[dir="ltr"] .sidebar-right.old-ie .sidebar-container {
               padding: 15px; } }
           .solutions-section .circle-wrapper .circles .circle .wrap-circle .icon {
             padding-top: 10px;
-            padding-bottom: 20px; }
+            padding-bottom: 20px;
+            color: #ed9500;
+            font-size: 70px;
+            font-size: 7rem;
+            line-height: 50px; }
+            .solutions-section .circle-wrapper .circles .circle .wrap-circle .icon .f-nsp {
+              line-height: 55px; }
             @media (max-width: 480px) {
               .solutions-section .circle-wrapper .circles .circle .wrap-circle .icon {
                 padding-top: 10px;
-                padding-bottom: 10px; }
+                padding-bottom: 10px;
+                font-size: 60px;
+                font-size: 6rem;
+                line-height: 40px; }
+                .solutions-section .circle-wrapper .circles .circle .wrap-circle .icon .f-nsp {
+                  line-height: 40px; }
                 .solutions-section .circle-wrapper .circles .circle .wrap-circle .icon img {
                   max-width: 40%; } }
           .solutions-section .circle-wrapper .circles .circle .wrap-circle h3 {
@@ -3894,7 +3952,10 @@ html[dir="ltr"] .sidebar-right.old-ie .sidebar-container {
         -o-transform: translateY(-50%);
         -ms-transform: translateY(-50%);
         -webkit-transform: translateY(-50%);
-        transform: translateY(-50%); }
+        transform: translateY(-50%);
+        font-size: 34px;
+        font-size: 3.4rem;
+        color: #ed9500; }
         @media (max-width: 768px) {
           .contact-info-section .wrap-info ul li .icon img {
             width: 80%; } }

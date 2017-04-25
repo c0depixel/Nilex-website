@@ -85,6 +85,9 @@
         -webkit-background-clip: padding-box;
         background-clip: padding-box;
         color: #fff;
+        i {
+          margin-left: 3px;
+        }
         @include breakpoint(phablet) {
           font-size: 14px;
           padding: 0 25px;

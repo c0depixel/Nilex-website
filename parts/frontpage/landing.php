@@ -10,7 +10,7 @@
           </div>
           <div class="actions">
             <a href="#" class="btn transparent">
-              Watch video
+              Watch video <i class="fa fa-play-circle" aria-hidden="true"></i>
             </a>
             <a href="#" class="btn primary">
               Order now

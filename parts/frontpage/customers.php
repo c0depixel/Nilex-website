@@ -156,7 +156,7 @@
       <div class="col-md-12">
         <div class="action">
           <a href="#" class="btn primary">
-            View more
+            View all
           </a>
         </div>
       </div>
